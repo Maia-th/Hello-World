@@ -16,9 +16,9 @@ body{
 }
 
 .icon {
-  width: 40px;
+  width: 35px;
   margin-left: 20px;
-  margin-top: 2px;
+  margin-top: 5px;
   position: fixed;
   z-index: 10;
 }
@@ -30,7 +30,7 @@ body{
   justify-content: center;
   position: fixed;
   width: 100%;
-  height: 7%;
+  height: 5%;
   background-color: black;
 }
 
@@ -52,7 +52,7 @@ body{
   transition: all ease 0.8s;
 }
 
-#Home, #Sobre {
+#Home, #Sobre, #Git {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,12 +61,12 @@ body{
   font-size: 50px;
 }
 
-#Sobre {
+#Sobre, #Git {
   font-size: 25px;
 }
 
 .Perfil {
-  width: 15%;
+  width: 25%;
   border-radius: 100%;
 }
 
@@ -78,4 +78,14 @@ body{
 .Logo {
   width: 28px;
   margin-left: 5px;
+}
+
+.Sob02 {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
 }
