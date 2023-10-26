@@ -93,3 +93,23 @@ body {
   justify-content: center;
   background-color: gray;
 }
+
+.Git02 {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+}
+
+.Git02 h1,
+.Git02 h2,
+.Git02 h3,
+.Git02 h5 {
+  text-align: center;
+}
+
+.Git02 p {
+  margin-left: 15px;
+  font-size: 20px;
+}
