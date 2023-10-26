@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   border: 0;
   font-family: "Times New Roman", Times, serif, Courier, monospace;
   color: azure;
 }
 
-body{
+body {
   background-image: url(img/World\ Map.svg);
   background-position: center;
   margin-top: 30;
@@ -52,7 +52,9 @@ body{
   transition: all ease 0.8s;
 }
 
-#Home, #Sobre, #Git {
+#Home,
+#Sobre,
+#Git {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +63,8 @@ body{
   font-size: 50px;
 }
 
-#Sobre, #Git {
+#Sobre,
+#Git {
   font-size: 25px;
 }
 
@@ -70,7 +73,8 @@ body{
   border-radius: 100%;
 }
 
-#Dev, #Cred {
+#Dev,
+#Cred {
   display: flex;
   flex-direction: row;
 }
