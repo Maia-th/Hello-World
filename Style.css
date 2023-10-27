@@ -15,6 +15,11 @@ body {
   background-size: cover;
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid white;
+}
+
 .icon {
   width: 35px;
   margin-left: 20px;
@@ -84,6 +89,7 @@ body {
   margin-left: 5px;
 }
 
+
 .Sob02 {
   width: 40%;
   height: 40%;
@@ -95,21 +101,46 @@ body {
 }
 
 .Git02 {
-  width: 80%;
+  width: 60%;
   height: 60%;
   display: flex;
   flex-direction: column;
   background-color: gray;
+  overflow: auto;
+  padding: 0 10PX;
+}
+
+.Git02::-webkit-scrollbar {
+  width: 10px;
+}
+
+.Git02::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+}
+
+.Git02::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: darkorange;
 }
 
 .Git02 h1,
 .Git02 h2,
 .Git02 h3,
 .Git02 h5 {
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.Git02 h1 {
   text-align: center;
+  font-size: 35px;
 }
 
 .Git02 p {
-  margin-left: 15px;
+  margin-left: 25px;
   font-size: 20px;
 }
