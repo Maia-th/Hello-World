@@ -98,6 +98,7 @@ hr {
   align-items: center;
   justify-content: center;
   background-color: gray;
+  border-radius: 80px;
 }
 
 .Git02 {
