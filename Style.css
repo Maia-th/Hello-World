@@ -109,6 +109,7 @@ hr {
   background-color: gray;
   overflow: auto;
   padding: 0 10PX;
+  border-radius: 10px;
 }
 
 .Git02::-webkit-scrollbar {
