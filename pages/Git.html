@@ -81,6 +81,55 @@
         <h3>Remover arquivo/diretório</h3>
         <h5>Remover arquivo</h5>
         <p>. git rm meu_arquivo.txt</p>
+        <h5>Remover diretório</h5>
+        <p>. git rm -r diretorio</p>
+        <h3>Visualizar histórico</h3>
+        <h5>Exibir histórico</h5>
+        <p>. git log</p>
+        <h5>Exibir histórico com diff das duas últimas alterações</h5>
+        <p>. git log -p -2</p>
+        <h5>Exibir resumo do histórico (hash completa, autor, data, comentário e qtde de alterações (+/-))</h5>
+        <p>. git log --stat</p>
+        <h5>Exibir informações resumidas em uma linha (hash completa e comentário)</h5>
+        <p>. git log --pretty=oneline</p>
+        <h5>Exibir histórico com formatação específica (hash abreviada, autor, data e comentário)</h5>
+        <p>. git log --pretty=format:"%h - %an, %ar : %s"</p>
+        <p>* %h: Abreviação do hash;</p>
+        <p>* %an: Nome do autor;</p>
+        <p>* Data;</p>
+        <p>* Comentário.</p>
+        <p>. Verifique as demais opções de formatação no [Git Book](http://git-scm.com/book/en/Git-Basics-Viewing-the-Commit-History)</p>
+        <h5>Exibir histório de um arquivo específico</h5>
+        <p>. git log -- &lt caminho_do_arquivo &gt</p>
+        <h5>Exibir histórico de um arquivo específico que contêm uma determinada palavra</h5>
+        <p>. git log --summary -S &lt palavra &gt [&lt caminho_do_arquivo &gt]</p>
+        <h5>Exibir histórico modificação de um arquivo</h5>
+        <p>. git log --diff-filter=M -- &lt caminho_do_arquivo &gt</p>
+        <p>* &lt D &gtpode ser substituido por: Adicionado (A), Copiado (C), Apagado (D), Modificado (M), Renomeado (R), entre outros.</p>
+        <h5>Exibir histório de um determinado autor</h5>
+        <p>. git log --author=usuario</p>
+        <h5>Exibir revisão e autor da última modificação de uma bloco de linhas</h5>
+        <p>. git blame -L 12,22 meu_arquivo.txt</p>
+        <h3>Desfazendo operações</h3>
+        <h5>Desfazendo alteração local (working directory)</h5>
+        <p>. Este comando deve ser utilizando enquanto o arquivo não foi adicionado na <b>staged area</b>.</p>
+        <p>> git checkout -- meu_arquivo.txt</p>
+        <h5>Desfazendo alteração local (staging area)</h5>
+        <p>. Este comando deve ser utilizando quando o arquivo já foi adicionado na <b>staged area</b>.</p>
+        <p>> git reset HEAD meu_arquivo.txt</p>
+        <p>. Se o resultado abaixo for exibido, o comando reset <b>não</b> alterou o diretório de trabalho.</p>
+        <p>. Unstaged changes after reset:</p>
+        <p>> M	meu_arquivo.txt</p>
+        <p>. A alteração do diretório pode ser realizada através do comando abaixo:</p>
+        <p>> git checkout meu_arquivo.txt</p>
+        <h2>Repositório Remoto</h2>
+        <h3>Continuação da lista em:</h3>
+        <p>.  <a href="https://gist.github.com/leocomelli/2545add34e4fec21ec16" target="_blank"
+          ><img
+            class="Logo"
+            src="../img/github_logo_icon_143772.svg"
+            alt="Logo GitHub"
+        /></a></p>
       </div>
     </div>
   </body>
