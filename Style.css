@@ -47,8 +47,7 @@ body {
 }
 
 .menu nav ul li a:hover {
-  background-color: rgb(170, 56, 2);
-  transition: all ease 0.8s;
+  color: darkgoldenrod;
 }
 
 #Home{
