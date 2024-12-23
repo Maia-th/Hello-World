@@ -6,10 +6,10 @@
 }
 
 body {
-  background-image: url(img/World\ Map.svg);
+  background-image: url(../img/World\ Map.svg);
   background-position: center;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -36,10 +36,11 @@ body {
 .menu nav ul {
   display: flex;
   list-style: none;
+  margin-right: 20px;
 }
 
 .menu nav ul li a {
-  padding: 10px 30px 10px 30px;
+  padding: 10px 10px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 20px;
@@ -50,12 +51,44 @@ body {
   color: darkgoldenrod;
 }
 
-#Home{
+#Home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100dvh;
   font-size: 3rem;
   text-align: center;
+}
+
+#Home img.gif {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu nav ul li a {
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+
+  #Home {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu nav ul li a {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+
+  #Home {
+    font-size: 2rem;
+  }
+
+  .icon {
+    width: 30px;
+  }
 }
